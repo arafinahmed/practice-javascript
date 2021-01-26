@@ -17,9 +17,49 @@
                 <br>
                 <input class="form-control" type="password" name="" id="" placeholder="Password">
                 <br>
-                <button class="btn btn-success">Enter</button>
+                <button id="verify-login" class="btn btn-success">Enter</button>
             </div>    
         </section>
+        <section id="transaction-area">
+            <div class="row g-3">
+                <div class="col-md-4" >
+                    <div class="deposit update">
+                        <h5>Deposit</h5>
+                        <h2>$ <span id="current-depo">00</span> </h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="withdraw update">
+                        <h5>Withdraw</h5>
+                        <h2>$00</h2>                        
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="balance update">
+                        <h5>Balance</h5>
+                        <h2>$1240</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="submit-area">
+                        <h5>Deposit</h5>
+                        <input id="deposit-amount" placeholder="$ amount you want to deposit" class="form-control" type="text"> <br>
+                        <button id="deposit-btn" class="btn btn-success">Deposit</button>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="submit-area">
+                        <h5>Withdraw</h5>
+                        <input placeholder="$ amount you want to withdraw" class="form-control" type="text"> <br>
+                        <button class="btn btn-success">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </main>
+    <script src="js/script.js"></script>
 </body>
 </html>
