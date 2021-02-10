@@ -12,6 +12,9 @@ loginBtn.addEventListener('click', function(){
 const depositBtn = document.getElementById('deposit-btn');
 depositBtn.addEventListener('click', function(){
     const depoAmount = getFromForm('deposit-amount');
+    if(depoAmount < 0){
+        alert('can not be negative');
+    }
     updateSpanText('current-depo', depoAmount);
     updateSpanText('current-balance', depoAmount);        
 });
