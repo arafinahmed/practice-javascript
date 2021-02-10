@@ -15,8 +15,10 @@ depositBtn.addEventListener('click', function(){
     if(depoAmount < 0){
         alert('can not be negative');
     }
-    updateSpanText('current-depo', depoAmount);
-    updateSpanText('current-balance', depoAmount);        
+    else{
+        updateSpanText('current-depo', depoAmount);
+        updateSpanText('current-balance', depoAmount);        
+    }
 });
 
 //Withdraw
